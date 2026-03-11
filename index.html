@@ -1,100 +1,73 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Treact</title>
-    <link rel="stylesheet" href="styles.css" />
-    <script src="index.js"></script>
-    <script
-      src="https://kit.fontawesome.com/8b945225e3.js"
-      crossorigin="anonymous"
-    ></script>
-  </head>
 
-  <body>
-    <section id="landing">
-      <nav class="row">
-        <div class="nav__container">
-            <div class="nav__logo">
-                <img
-                class="logo"
-                src="/assets/Treact-logo.svg"
-                alt="Treact Logo"
-                />
-                <div class="nav__logo--title">Treact</div>
-            </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Treact</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="index.js"></script>
+  <script src="https://kit.fontawesome.com/8b945225e3.js" crossorigin="anonymous"></script>
+</head>
 
-            <div class="nav__links">
-                <div nav__link>
-                    <ul>
-                    <li><a href="#landing">About</a></li>
-                    <li><a href="#" class="no-cursor">Blog</a></li>
-                    <li><a href="#pricing">Pricing</a></li>
-                    <li><a href="#" class="no-cursor">Contact Us</a></li>
-                    </ul>
-                </div>
-                <div nav__link--join>
-                    <li><a href="#">Login</a></li>
-                    <button class="btn btn--primary">Sign Up</button>
-                </div>
-            </div>
+<body>
+  <section id="landing">
+    <nav class="row">
+      <div class="nav__container">
+        <div class="nav__logo">
+          <img class="nav__logo--img" src="/assets/Treact-logo.svg" alt="Treact Logo" />
+          <div class="nav__logo--title">Treact</div>
         </div>
-      </nav>
 
-      <header class="row">
-        <div class="header__container">
-          <div class="header__description">
-            <h1>
-              Beautiful React Templates
-              <span class="text-purple">for you.</span>
-            </h1>
-            <p>
-              Our templates are easy to setup, understand and customize. Fully
-              modular components with a variety of pages and components.
-            </p>
-            <div class="header__button">
-              <input
-                type="email"
-                placeholder="Your E-mail Address"
-                class="header__input"
-              />
-              <button class="btn btn--primary">Get Started</button>
-            </div>
+        <div class="nav__links--container">
+          <ul class="nav__links">
+            <li><a href="#landing" class="nav__link">About</a></li>
+            <li><a href="#" class="nav__link no-cursor">Blog</a></li>
+            <li><a href="#pricing" class="nav__link">Pricing</a></li>
+            <li><a href="#" class="nav__link no-cursor">Contact Us</a></li>
+            <li><a href="#" class="nav__link--login no-cursor">Login</a></li>
+            <button class="btn btn--primary">Sign Up</button>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
-            <div class="header__social">
-                <p>OUR TRUSTED CUSTOMERS</p>
-                <img
-                src="/assets/Fortune-Logo-2010.png"
-                alt="Fortune Logo"
-                />
-                <img
-                src="/assets/The_Weather_Channel-Logo.wine.png"
-                alt="The Weather Channel Logo"
-                />
-                <img
-                src="/assets/Fast-Company-Logo.jpg"
-                alt="Fast Company Logo"
-                />
-                <img
-                src="/assets/Natgeologo.svg"
-                alt="National Geographic Logo"
-                />
-            </div>
+    <header class="row header__row">
+      <div class="header__container">
+        <div class="header__description">
+          <h1>
+            Beautiful React Templates
+            <span class="text-purple">for you.</span>
+          </h1>
+          <p>
+            Our templates are easy to setup, understand and customize. Fully
+            modular components with a variety of pages and components.
+          </p>
+          <div class="header__button">
+            <input type="email" placeholder="Your E-mail Address" class="header__input" />
+            <button class="btn btn--primary">Get Started</button>
           </div>
 
-          <div class="header__img">
-            <img
-              src="/assets/undraw_winter-designer_a6kq.svg"
-              alt="Treact Hero Image"
-            />
+          <div class="header__socials">
+            <div class="header__socials--title">
+              <p>OUR TRUSTED CUSTOMERS</p>
+            </div>
+            <div class="header__socials--line"></div> 
+            <img class="header__social" src="/assets/Fortune-Logo-2010.png" alt="Fortune Logo" />
+            <img class="header__social" src="/assets/The_Weather_Channel-Logo.wine.png" alt="The Weather Channel Logo" />
+            <img class="header__social" src="/assets/Fast-Company-Logo.jpg" alt="Fast Company Logo" />
+            <img class="header__social" src="/assets/Natgeologo.svg" alt="National Geographic Logo" />
+          </div>          
           </div>
         </div>
-      </header>
-    </section>
 
+        <div class="header__img">
+          <img src="/assets/undraw_winter-designer_a6kq.svg" alt="Treact Hero Image" />
+        </div>
+      </div>
+    </header>
+  </section>
+</body>
 
-
-  </body>
 </html>
