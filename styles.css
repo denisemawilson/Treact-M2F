@@ -13,10 +13,6 @@ html {
     scroll-behavior: smooth;
 }
 
-h1 {
-    color: #1a202c;
-}
-
 .text-purple {
     color: #6415ff;
 }
@@ -24,6 +20,13 @@ h1 {
 a {
     text-decoration: none;
     color: #243e63
+}
+
+p {
+    color: #1a202c;
+    font-size: 18px;
+    line-height: 1.5;
+    margin: 32px 0;
 }
 
 #landing {
@@ -43,19 +46,19 @@ ul {
     align-items: center;
 }
 
-/* Navigation Styles */
-
 .row {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
     }
 
+
+/* Navigation Styles */
+
 .nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
 }
 
 
@@ -68,8 +71,10 @@ ul {
     align-items: center;
     margin: 0 auto;
     padding: 32px 0;
+    /*
     gap: calc(100% / 6);
-}
+*/
+    }
 
 .nav__logo--img {
     width: 40px;
@@ -126,29 +131,95 @@ ul {
 
 /*Header/Landing Style */
 
+
 .header__container {
     display: flex;
-    gap: 24px;
+    flex-direction: column;
+    align-content: space-evenly;
 }
 
 .header__row {
     display: flex;
+    padding: 96px 0;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding:96px 0;
-    width: 40%;
+    }
+
+.header__img {
+    width: 100%;
+    max-width: calc(1200px / 60%);
+}
+
+.header__img--wrapper {
+    width: 100%;
+    max-width: 768px;
+}
+
+.header__description {
+    width: 100%;
+    max-width: calc(1200px / 40%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 32px;
 }
 
 .header__socials {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 32px;
 }
 
+.header__socials--title {
+    font-size: 12px;
+    font-weight: 700;
+    margin: 80px 0 0 0;
+    color: #a0aec0;
+    display: flex;
+    text-align: left;
+    line-height: 1.5;
+    margin: 32px 0;
+}
+
 .header__social {
-    width: 120px;
-    height: auto;
+    width: 120px; display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: left;
+    padding: 4px;
+}
+
+h1 {
+    color: #1a202c;
+    width: 100%;
+    font-size: 48px;
+    max-width: 512px;
+}
+
+.header__social--logos {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+    padding: 0 128px 0 0;
+}
+
+.header__button {
+    border-color: #a0aec0;
+    border-width: 30px;
+    padding: 20px 192px 20px 32px;
+    margin-top: 2px;
+    border-radius: 40px;
+    border: none;
+    line-height: 1.5;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+    font-weight: 700;
 }
