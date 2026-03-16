@@ -20,53 +20,338 @@
           <div class="nav__logo--title">Treact</div>
         </div>
 
-        <div class="nav__links--container">
-          <ul class="nav__links">
-            <li><a href="#landing" class="nav__link">About</a></li>
-            <li><a href="#" class="nav__link no-cursor">Blog</a></li>
-            <li><a href="#pricing" class="nav__link">Pricing</a></li>
-            <li><a href="#" class="nav__link no-cursor">Contact Us</a></li>
-            <li><a href="#" class="nav__link--login no-cursor">Login</a></li>
-            <button class="btn btn--primary">Sign Up</button>
-          </ul>
+        <div class="nav__links">
+          <a href="#landing" class="nav__link">About</a>
+          <a href="#" class="nav__link no-cursor">Blog</a>
+          <a href="#pricing" class="nav__link">Pricing</a>
+          <a href="#" class="nav__link no-cursor">Contact Us</a>
+          <a href="#" class="nav__link login">Login</a>
+          <button class="btn btn--primary">Sign Up</button>
         </div>
       </div>
     </nav>
 
-    <header class="row header__row">
-      <div class="header__container">
-        <div class="header__description">
-          <h1>
-            Beautiful React Templates
-            <span class="text-purple">for you.</span>
-          </h1>
-          <p>
-            Our templates are easy to setup, understand and customize. Fully
-            modular components with a variety of pages and components.
-          </p>
-          <div class="header__button">
-            <input type="email" placeholder="Your E-mail Address" class="header__input" />
-            <button class="btn btn--primary">Get Started</button>
-          </div>
-
-          <div class="header__socials">
-            <div class="header__socials--title">OUR TRUSTED CUSTOMERS</div>
-            <div class="header__social--logos">
-              <img class="header__social" src="/assets/Fortune-Logo-2010.png" alt="Fortune Logo" />
-              <img class="header__social" src="/assets/The_Weather_Channel-Logo.wine.png" alt="The Weather Channel Logo" />
-              <img class="header__social" src="/assets/Fast-Company-Logo.jpg" alt="Fast Company Logo" />
-              <img class="header__social" src="/assets/Natgeologo.svg" alt="National Geographic Logo" />
+    <header class="header">
+      <div class="container header__container">
+        <div class="row header__row">
+          <div class="header__description">
+            <h1 class="header__title">Beautiful React Templates <span class="text-purple">for you.</span></h1>
+            <p class="header__para">
+              Our templates are easy to setup, understand and customize. Fully
+              modular components with a variety of pages and components.
+            </p>
+            
+            <div class="header__btn">
+                <input type="email" class="header__email--input" placeholder="Your E-mail Address"/>
+                <button class="btn header__btn--primary">Get Started</button>
             </div>
-          </div>
-        </div>
-      </div>
 
-        <div class="header__img--wrapper">
-          <img class="header__img" src="/assets/undraw_winter-designer_a6kq.svg" alt="Treact Hero Image" />
+            <p class="header__socials--title">OUR TRUSTED CUSTOMERS</p>
+            <img class="header__socials--img" src="https://module-2-fp-example-website.vercel.app/assets/customers-logo-strip.680ac7c2e8ae28161d2c.png" alt="Treact Hero Image" />
+          </div>
+          
+          <div class="header__img--wrapper">
+            <img class="header__img" src="/assets/undraw_winter-designer_a6kq.svg" alt="Treact Hero Image" />
+          </div>
+          </div>
         </div>
       </div>
     </header>
   </section>
+
+  <section id="features">
+      <div class="container features__container">
+        <div class="row features__row">
+          <h4 class="section__title">Features</h4>
+          <h1 class="section__description">We Have Amazing <span class="text-purple">Services.</span></h1>
+          <p class="section__para">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate placeat esse nostrum, quo sed ratione officiis a repudiandae odit, nesciunt quisquam! Molestias repellat nam autem voluptate aperiam voluptates! Libero, tenetur.
+          </p>
+        
+          <div class="features__services">
+            
+            
+            <div class="features__service">
+              <div class="row features__service-img--row">
+                <figure class="features__img--wrapper">
+                  <img class="features__img" src="assets/shield-icon.svg" alt="Shield Icon" />
+                </figure>
+              
+                <div class="row features__service--row">
+                  <h2 class="features__service--title">Secure</h2>
+                  <p class="features__service--para">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, cumque.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="features__service">
+              <div class="row features__service-img--row">
+                <figure class="features__img--wrapper">
+                  <img class="features__img" src="assets/support-icon.svg" alt="Support Icon" />
+                </figure>
+              
+                <div class="row features__service--row">
+                  <h2 class="features__service--title">24/7 Support</h2>
+                  <p class="features__service--para">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, cumque.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="features__service">
+              <div class="row features__service-img--row">
+                <figure class="features__img--wrapper">
+                  <img class="features__img" src="assets/customize-icon.svg" alt="Customize Icon" />
+                </figure>
+              
+                <div class="row features__service--row">
+                  <h2 class="features__service--title">Customizable</h2>
+                  <p class="features__service--para">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, cumque.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="features__service">
+              <div class="row features__service-img--row">
+                <figure class="features__img--wrapper">
+                  <img class="features__img" src="assets/reliable-icon.svg" alt="Reliable Icon" />
+                </figure>
+              
+                <div class="row features__service--row">
+                  <h2 class="features__service--title">Reliable</h2>
+                  <p class="features__service--para">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, cumque.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="features__service">
+              <div class="row features__service-img--row">
+                <figure class="features__img--wrapper">
+                  <img class="features__img" src="assets/flash-icon.svg" alt="Fast Icon" />
+                </figure>
+              
+                <div class="row features__service--row">
+                  <h2 class="features__service--title">Fast</h2>
+                  <p class="features__service--para">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, cumque.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="features__service">
+              <div class="row features__service-img--row">
+                <figure class="features__img--wrapper">
+                  <img class="features__img" src="assets/simple-icon.svg" alt="Easy Icon" />
+                </figure>
+              
+                <div class="row features__service--row">
+                  <h2 class="features__service--title">Easy</h2>
+                  <p class="features__service--para">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, cumque.
+                  </p>
+                </div>
+              </div>
+            </div>
+            
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="quality">
+      <div class="container features__container">
+        <div class="row features__row">
+          <h4 class="section__title">Quality Work</h4>
+          <h1 class="section__description">Designed & Developed by <span class="text-purple">Professionals.</span></h1>
+          <p class="section__para">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate placeat esse nostrum, quo sed ratione officiis a repudiandae odit, nesciunt quisquam! Molestias repellat nam autem voluptate aperiam voluptates! Libero, tenetur.
+          </p>
+
+          <button class="btn btn--primary">Learn More</button>
+      
+        </div>
+
+          <div class="header__img--wrapper">
+            <img class="header__img" src="/assets/undraw_winter-designer_a6kq.svg" alt="Treact Hero Image" />
+          </div>
+
+        
+      </div>
+    </div>
+  </section>
+
+<section id="steps">
+      <div class="container features__container">
+       <div class="row features__row">
+          <h4 class="section__title">Steps</h4>
+          <h1 class="section__description">Easy to <span class="text-purple">Get Started.</span></h1>
+        
+          <div class="features__services">
+            
+            
+            <div class="features__service">
+              <div class="row features__service-img--row">
+                <figure class="features__img--wrapper">
+                  <img class="features__img" src="assets/shield-icon.svg" alt="Shield Icon" />
+                </figure>
+              
+                <div class="row features__service--row">
+                  <h2 class="features__service--title">Register</h2>
+                  <p class="features__service--para">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, cumque.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="features__service">
+              <div class="row features__service-img--row">
+                <figure class="features__img--wrapper">
+                  <img class="features__img" src="assets/shield-icon.svg" alt="Shield Icon" />
+                </figure>
+              
+                <div class="row features__service--row">
+                  <h2 class="features__service--title">Download</h2>
+                  <p class="features__service--para">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, cumque.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="features__service">
+              <div class="row features__service-img--row">
+                <figure class="features__img--wrapper">
+                  <img class="features__img" src="assets/shield-icon.svg" alt="Shield Icon" />
+                </figure>
+              
+                <div class="row features__service--row">
+                  <h2 class="features__service--title">Run</h2>
+                  <p class="features__service--para">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, cumque.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+        <div class="header__img--wrapper">
+            <img class="header__img" src="/assets/undraw_winter-designer_a6kq.svg" alt="Treact Hero Image" />
+          </div>
+
+      </div>
+    </div>
+  </section>
+
+<section id="value">
+      <div class="container features__container">
+        <div class="row features__row">
+          <h4 class="section__title">Values</h4>
+          <h1 class="section__description">We Always Abide by Our <span class="text-purple">Principles.</span></h1>
+          <p class="section__para">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate placeat esse nostrum, quo sed ratione officiis a repudiandae odit, nesciunt quisquam! Molestias repellat nam autem voluptate aperiam voluptates! Libero, tenetur.
+          </p>
+
+          <div class="features__service">
+              <div class="row features__service-img--row">
+                <figure class="features__img--wrapper">
+                  <img class="features__img" src="assets/shield-icon.svg" alt="Shield Icon" />
+                </figure>
+              
+                <div class="row features__service--row">
+                  <h2 class="features__service--title">Affordable</h2>
+                  <p class="features__service--para">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, cumque.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="features__service">
+              <div class="row features__service-img--row">
+                <figure class="features__img--wrapper">
+                  <img class="features__img" src="assets/shield-icon.svg" alt="Shield Icon" />
+                </figure>
+              
+                <div class="row features__service--row">
+                  <h2 class="features__service--title">Professionalism</h2>
+                  <p class="features__service--para">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, cumque.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+          <button class="btn btn--primary">Learn More</button>
+      
+        </div>
+
+          <div class="header__img--wrapper">
+            <img class="header__img" src="/assets/undraw_winter-designer_a6kq.svg" alt="Treact Hero Image" />
+          </div>
+
+        
+      </div>
+    </div>
+  </section>
+
+  <section id="pricing">
+    <div class="container features__container">
+      <div class="row features__row">
+        <h4 class="section__title">Pricing</h4>
+        <h1 class="section__description">Reasonable & Flexible <span class="text-purple">Plans.</span></h1>
+        <p class="section__para">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate placeat esse nostrum, quo sed ratione officiis a repudiandae odit, nesciunt quisquam! Molestias repellat nam autem voluptate aperiam voluptates! Libero, tenetur.
+        </p> 
+      </div>
+
+         
+      
+    </div>
+  </section>
+
+  <section id="testimony">
+      <div class="container features__container">
+        <div class="row features__row">
+          <h4 class="section__title">Testimonials</h4>
+          <h1 class="section__description">Our Clients <span class="text-purple">Love Us.</span></h1>
+          <p class="section__para">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate placeat esse nostrum, quo sed ratione officiis a repudiandae odit, nesciunt quisquam! Molestias repellat nam autem voluptate aperiam voluptates! Libero, tenetur.
+          </p>
+
+          <button class="btn btn--primary">Learn More</button>
+      
+        </div>
+
+          <div class="header__img--wrapper">
+            <img class="header__img" src="/assets/undraw_winter-designer_a6kq.svg" alt="Treact Hero Image" />
+          </div>
+
+        
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+</main>
+
+<footer class="footer">
+  
+  
+</footer>
+
 </body>
 
 </html>
