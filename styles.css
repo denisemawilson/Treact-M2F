@@ -364,7 +364,6 @@ ul {
     display: flex;
     align-items: flex-start;
     padding: 32px 24px;
-
 }
 
 .features__img--wrapper {
@@ -449,6 +448,293 @@ ul {
 
 .steps__row, .testimony__row {
     flex-direction: row-reverse;
+}
+
+.steps__content {
+    width: 50%;
+    padding: 32px 0;
+    padding-left: 64px;
+}
+
+.steps__services {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.steps__service {
+    display: flex;
+    margin-top: 32px;
+}
+
+.steps__service--row {
+    margin: 0 0 0 24px;
+}
+
+.steps__list{
+    display: flex;
+    margin-top: 32px;
+}
+
+.steps__number {
+    color: #cbd5e0;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 1;
+}
+
+
+.steps__service--title {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.steps__service--para {
+    font-size: 14px;
+    font-weight: 500;
+    margin: 12px 0 0 0;
+    max-width: 320px;
+    line-height: 2;
+    line-height: 2;
+}
+
+.steps__img--wrapper {
+    width: 50%;
+    z-index: 2;
+    position: relative;
+}
+
+.steps__img {
+    z-index: 1;
+}
+
+.step__grid {
+    width: 160px;
+    height: 160px;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    color: rgb(100, 21, 255);
+    fill: currentColor;
+    z-index: 0;
+    transform: translateX(-135%) translateY(53%) scaleX(1) scaleY(1);
+    display: flex;
+    opacity: 0.2;
+}
+
+
+/* Values Section Styles */
+
+.values__content {
+    padding: 32px 64px 32px 0;
+}
+
+.values__services {
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.values__service {
+    margin: 32px 32px 0 0;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    padding: 0;
+}
+
+.values__service-img--row {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+.values__img--wrapper {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.values__img--wrapper-1  {
+    background-color: #9ae6b4;
+}
+
+.values__img--wrapper-2 {
+    background-color: #f5cbd6;
+}
+
+.values__service--title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 12px;
+}
+
+.values__service--para {
+    font-size: 16px;
+    margin: 16px 0 0 0;
+    line-height: 1.625;
+    max-width: 400px;
+    width: 100%;
+    color: #718096;
+    text-align: top;
+}
+
+
+/* Pricing Section Styles */  
+
+.plans {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    position: relative;
+    justify-content: space-between;
+}
+
+.plan {
+    border: 1px rgb(240, 230, 230) solid;
+    background-color: rgb(255 255 255);
+    border-radius: 8px;
+    margin-top: 32px;
+    margin-right: 6px;
+    position: relative;
+    display: flex;
+    max-width: 384px;
+    flex-direction: column;
+    text-align: center;
+    z-index: 2;
+}
+
+.pricing__service--title, .pricing__service--number, .pricing__title, .plan__feature, .pricing__service--row, .pricing__btn {
+    align-items: center;
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.pricing__service--title, .plan__title {
+    text-transform: uppercase;
+    font-size: 20px;
+    color: #1a202c;
+    line-height: 1.625;
+}
+
+.plan__title {
+    text-transform: none;
+}
+
+.pricing__service--number {
+    line-height: 1.625;
+}
+
+.pricing__title {
+    margin: 0;
+    color: #718096;
+    line-height: 1.625;
+}
+
+.plan__btn {
+    text-transform: uppercase;
+    color: #f7fafc;
+    background: linear-gradient(115deg, rgb(56, 178, 172) 0%, rgb(129, 230, 217) 100%);
+    transition: all 300ms ease;
+}
+
+.plan__top {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    height: 0.5rem;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+}
+
+.plans__blob, .path {
+    z-index: -1;
+    position: absolute;
+    transform: translateX(-365%) translateY(185%) scaleX(1) scaleY(1);
+    height: 256px;
+    width: 256px;
+    opacity: 0.25;
+}
+
+.pricing__service-category--row {
+    border-top: 2px solid rgb(229, 231, 235);
+    border-bottom: 2px solid rgb(229, 231, 235);
+}
+
+.plan:nth-child(2) .pricing__service--title, .plan:nth-child(2) .pricing__service--number, .plan:nth-child(2) .pricing__title, .plan:nth-child(2) .plan__feature {
+    color: #f7fafc;
+}
+
+.plan:nth-child(1) .plan__btn, .plan:nth-child(1) .plan__top {
+    background: linear-gradient(115deg, rgb(56, 178, 172) 0%, rgb(129, 230, 217) 100%);
+}
+
+.plan:nth-child(2) {
+    background: linear-gradient(135deg, rgb(76, 81, 191) 0%, rgb(102, 126, 234) 100%);
+}
+
+.plan:nth-child(2) .plan__btn {
+    color: #6415ff;
+    background: #f7fafc;
+}
+
+.plan:nth-child(3) .plan__btn, .plan:nth-child(3) .plan__top {
+    background: linear-gradient(115deg, rgb(245, 101, 101) 0%, rgb(254, 178, 178) 100%);
+}
+
+.pricing__plan--number {
+    margin: 4px 0;
+    font-size: 48px;
+}
+
+.pricing__service--row {
+    margin: 0;
+}
+
+.pricing__service-category--row {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    color: #718096;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.plan__feature {
+    margin-top: 20px;
+    font-weight: 500;
+    color: #718096;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.plan__btn {
+    margin-top: 32px;
+    align-content: center;
+}
+
+.plan__button {
+    padding: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Testimony Section Styles */
+
+.testimony__content {
+    padding-left: 64px;
 }
 
 
