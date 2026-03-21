@@ -60,6 +60,7 @@
     </header>
   </section>
 
+  <main id="main">
   <section id="features">
       <div class="container features__container">
         <div class="row features__row">
@@ -386,7 +387,7 @@
                 <div class="features__service--row pricing__service--row">
                   <h2 class="features__service--title pricing__service--title">Business</h2>
                   <h1 class="pricing__service--number">$37.99</h1>
-                  <p class="section__title pricing__title">Buy Now</p>
+                  <p class="section__title pricing__title">Monthly</p>
                 </div>
 
               </div>
@@ -478,7 +479,6 @@
               Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia. 
             </p>
 
-
             <div class="row testimony__testimonial--content">
 
               <div class="testimony__testimonial--profile-info">
@@ -493,10 +493,10 @@
                 </div>
               </div>
 
-              <div class="section__button--wrapper">
-                <button class="btn btn--primary btn--left"><i class="fa-solid fa-arrow-left" style="color: rgb(100, 21, 255);"></i></button>
-                <div class="divider"></div>
-                <button class="btn btn--primary btn--right"><i class="fa-solid fa-arrow-right" style="color: rgb(100, 21, 255);"></i></button>
+              <div class="testimony__button--wrapper">
+                <button class="btn btn--primary testimonial__button"><i class="fa-solid fa-arrow-left" style="color: rgb(100, 21, 255);"></i></button>
+                <div class="testimony__divider"></div>
+                <button class="btn btn--primary testimonial__button"><i class="fa-solid fa-arrow-right" style="color: rgb(100, 21, 255);"></i></button>
               </div>
             </div>
 
@@ -512,7 +512,7 @@
     </div>
   </section>
 
-  <section id="closing bar">
+  <section id="closing-bar">
     <div class="container closing__container">
       <div class="row closing__row">
         <svg viewBox="0 0 600 600" class="closing__blob">
@@ -554,7 +554,7 @@
 <footer class="footer">
   <div class="footer__container">
     <div class="row footer__row">
-    <svg viewBox="0 0 600 600" class="closing__blob">
+    <svg viewBox="0 0 600 600" class="footer__blob">
       <g transform="translate(300,300)">
         <path
         d="M153.6,-239C199.1,-209.8,236,-167.2,258.4,-118C280.9,-68.9,288.9,-13.1,281.2,40.4C273.5,93.9,250.1,145.2,214.7,186.1C179.3,226.9,131.9,257.4,80,272.6C28.2,287.8,-28.2,287.8,-80,272.6C-131.9,257.4,-179.3,226.9,-214.7,186.1C-250.1,145.2,-273.5,93.9,-281.2,40.4C-288.9,-13.1,-280.9,-68.9,-258.4,-118C-236,-167.2,-199.1,-209.8,-153.6,-239C-108.1,-268.3,-54.1,-284.1,0,-284.1C54.1,-284.1,108.1,-268.3,153.6,-239Z"
@@ -563,7 +563,7 @@
       </g>
     </svg>
   
-    <svg viewBox="0 0 600 600" class="closing__blob">
+    <svg viewBox="0 0 600 600" class="footer__blob">
       <g transform="translate(300,300)">
           <path
           d="M153.6,-239C199.1,-209.8,236,-167.2,258.4,-118C280.9,-68.9,288.9,-13.1,281.2,40.4C273.5,93.9,250.1,145.2,214.7,186.1C179.3,226.9,131.9,257.4,80,272.6C28.2,287.8,-28.2,287.8,-80,272.6C-131.9,257.4,-179.3,226.9,-214.7,186.1C-250.1,145.2,-273.5,93.9,-281.2,40.4C-288.9,-13.1,-280.9,-68.9,-258.4,-118C-236,-167.2,-199.1,-209.8,-153.6,-239C-108.1,-268.3,-54.1,-284.1,0,-284.1C54.1,-284.1,108.1,-268.3,153.6,-239Z"
@@ -572,63 +572,77 @@
       </g>
     </svg>
   
-    <div class="row footer__row">
+    <div class="row footer__row--links">
       
       <div class="footer__categories">
         <div class="footer__category--title">Main</div>
-        <a href="#" class="footer__category--top no-cursor">Blog</a>
-        <a href="#" class="footer__category no-cursor">FAQs</a>
-        <a href="#" class="footer__category no-cursor">Support</a>
-        <a href="#" class="footer__category no-cursor">About Us</a>
+        <a class="footer__category--top">Blog</a>
+        <a class="footer__category">FAQs</a>
+        <a class="footer__category">Support</a>
+        <a class="footer__category">About Us</a>
       </div>
 
       <div class="footer__categories">
         <div class="footer__category--title">Product</div>
-        <a href="#pricing" class="footer__category--top no-cursor">Log In</a>
-        <a href="#pricing" class="footer__category ">Personal</a>
-        <a href="#pricing" class="footer__category ">Business</a>
-        <a href="#pricing" class="footer__category ">Team</a>
+        <a class="footer__category--top no-cursor">Log In</a>
+        <a href="#pricing" class="footer__category">Personal</a>
+        <a href="#pricing" class="footer__category">Business</a>
+        <a class="footer__category">Team</a>
       </div>
 
       <div class="footer__categories">
         <div class="footer__category--title">Press</div>
-        <a href="#" class="footer__category--top no-cursor">Logos</a>
-        <a href="#" class="footer__category no-cursor">Events</a>
-        <a href="#" class="footer__category no-cursor">Stories</a>
-        <a href="#" class="footer__category no-cursor">Office</a>
+        <a class="footer__category--top">Logos</a>
+        <a class="footer__category">Events</a>
+        <a class="footer__category">Stories</a>
+        <a class="footer__category">Office</a>
       </div>
 
       <div class="footer__categories">
         <div class="footer__category--title">Team</div>
-        <a href="#" class="footer__category--top no-cursor">Career</a>
-        <a href="#" class="footer__category no-cursor">Founders</a>
-        <a href="#" class="footer__category no-cursor">Culture</a>
-        <a href="#" class="footer__category no-cursor">Onboarding</a>
+        <a class="footer__category--top">Career</a>
+        <a class="footer__category">Founders</a>
+        <a class="footer__category">Culture</a>
+        <a class="footer__category">Onboarding</a>
       </div>
 
       <div class="footer__categories">
         <div class="footer__category--title">Legal</div>
-        <a href="#" class="footer__category--top no-cursor">GDPR</a>
-        <a href="#" class="footer__category no-cursor">Privacy Policy</a>
-        <a href="#" class="footer__category no-cursor">Terms of Service</a>
-        <a href="#" class="footer__category no-cursor">Disclaimer</a>
+        <a class="footer__category--top">GDPR</a>
+        <a class="footer__category">Privacy Policy</a>
+        <a class="footer__category">Terms of Service</a>
+        <a class="footer__category">Disclaimer</a>
         </div>
 
       </div>
 
     </div>
+    </main>
 
-    <div class="row footer__row">
+    <div class="footer__divider"></div>
+
+    <div class="row footer__row--logo">
       <div class="nav__logo footer__logo">
-        <img class="nav__logo--img footer__logo--img" src="/assets/Treact-logo.svg" alt="Treact Logo" />
+        <img class="nav__logo--img footer__logo--img" src="/assets/Treact-footerlogo.svg" alt="Treact Logo" />
         <div class="nav__logo--title footer__logo--title">Treact Inc.</div>
       </div>
       
       <p class="footer__copyright">&copy; 2018 Treact Inc. All Rights Reserved.</p>
       
-      <icons>
+      <div class="nav__logo footer__socials">
+        <div class="footer__social">
+          <i class="fa-brands fa-facebook-f" style="color: #243e63;"></i>
+        </div>
+        
+        <div class="footer__social">
+          <i class="fa-brands fa-twitter" style="color: #243e63;"></i>
+        </div>
 
-      </icons>
+        <div class="footer__social">
+          <i class="fa-brands fa-youtube" style="color: #243e63;"></i>
+        </div>
+
+      </div>
     </div>
 
   </div>
