@@ -20,16 +20,45 @@
           <div class="nav__logo--title">Treact</div>
         </div>
 
-        <div class="nav__links">
+        <ul class="nav__links">
           <a href="#features" class="nav__link">About</a>
-          <a href="#" class="nav__link no-cursor">Blog</a>
+          <a class="nav__link">Blog</a>
           <a href="#pricing" class="nav__link">Pricing</a>
-          <a href="#" class="nav__link no-cursor">Contact Us</a>
-          <a href="#" class="nav__link login">Login</a>
+          <a class="nav__link">Contact Us</a>
+          <a href="#closing-bar" class="nav__link login">Login</a>
           <button class="btn btn--primary">Sign Up</button>
-        </div>
+        </ul>
       </div>
+
+    <button class="btn__menu" onclick='openMenu()'>
+      <i class="fa-solid fa-bars"></i> 
+    </button>
+
+    <div class="menu__backdrop">
+      <button class="btn__menu btn__menu--close" onclick='closeMenu()'>
+        <i class="fa-solid fa-times"></i>
+      </button>
+
+      <ul class="menu__links">
+        <li class="menu__list">
+          <a href="#features" class="menu__link">About</a></li>
+        <li class="menu__list">
+          <a href="#" class="menu__link">Blog</a></li>
+        <li class="menu__list">
+          <a href="#pricing" class="menu__link">Pricing</a></li>
+        <li class="menu__list">
+          <a href="#" class="menu__link">Contact Us</a></li>
+        <li class="menu__list">
+          <a href="#closing-bar" class="menu__link">Login</a></li>
+        <li class="menu__list">
+          <button class="btn btn--primary">Sign Up</button></li>
+
+    </div>
+
     </nav>
+
+
+
 
     <header class="header">
       <div class="container header__container">
@@ -284,7 +313,7 @@
                         ></path>
                       </svg> 
               </figure>
-              <h2 class="features__service--title values__service--title">Affordable</h2>
+              <div class="features__service--title values__service--title">Affordable</div>
             </div>
 
               <p class="features__service--para values__service--para">
@@ -293,6 +322,7 @@
 
           </div>
           
+
           <div class="features__service values__service">
             <div class="row values__service-img--row">
               <figure class="values__img--wrapper values__img--wrapper-2">
@@ -322,7 +352,7 @@
                         ></path>
                       </svg> 
               </figure>
-              <h2 class="features__service--title values__service--title">Professionalism</h2>
+              <div class="features__service--title values__service--title">Professionalism</div>
             </div>
 
               <p class="features__service--para values__service--para">
@@ -336,7 +366,7 @@
           </div>
         </div>
       
-        <div class="section__img--wrapper">
+        <div class="section__img--wrapper values__img--wrapper-3 ">
           <img class="section__img" src="/assets/values.svg" alt="Value Image" />
         </div>
     </div>
@@ -552,9 +582,7 @@
 </main>
 
 <footer class="footer">
-  <div class="footer__container">
-    <div class="row footer__row">
-    <svg viewBox="0 0 600 600" class="footer__blob">
+  <svg viewBox="0 0 600 600" class="footer__blob">
       <g transform="translate(300,300)">
         <path
         d="M153.6,-239C199.1,-209.8,236,-167.2,258.4,-118C280.9,-68.9,288.9,-13.1,281.2,40.4C273.5,93.9,250.1,145.2,214.7,186.1C179.3,226.9,131.9,257.4,80,272.6C28.2,287.8,-28.2,287.8,-80,272.6C-131.9,257.4,-179.3,226.9,-214.7,186.1C-250.1,145.2,-273.5,93.9,-281.2,40.4C-288.9,-13.1,-280.9,-68.9,-258.4,-118C-236,-167.2,-199.1,-209.8,-153.6,-239C-108.1,-268.3,-54.1,-284.1,0,-284.1C54.1,-284.1,108.1,-268.3,153.6,-239Z"
@@ -571,84 +599,80 @@
           ></path>
       </g>
     </svg>
-  
-    <div class="row footer__row--links">
+
+    <div class="row footer__row">
       
-      <div class="footer__categories">
-        <div class="footer__category--title">Main</div>
-        <a class="footer__category--top">Blog</a>
-        <a class="footer__category">FAQs</a>
-        <a class="footer__category">Support</a>
-        <a class="footer__category">About Us</a>
-      </div>
-
-      <div class="footer__categories">
-        <div class="footer__category--title">Product</div>
-        <a class="footer__category--top no-cursor">Log In</a>
-        <a href="#pricing" class="footer__category">Personal</a>
-        <a href="#pricing" class="footer__category">Business</a>
-        <a class="footer__category">Team</a>
-      </div>
-
-      <div class="footer__categories">
-        <div class="footer__category--title">Press</div>
-        <a class="footer__category--top">Logos</a>
-        <a class="footer__category">Events</a>
-        <a class="footer__category">Stories</a>
-        <a class="footer__category">Office</a>
-      </div>
-
-      <div class="footer__categories">
-        <div class="footer__category--title">Team</div>
-        <a class="footer__category--top">Career</a>
-        <a class="footer__category">Founders</a>
-        <a class="footer__category">Culture</a>
-        <a class="footer__category">Onboarding</a>
-      </div>
-
-      <div class="footer__categories">
-        <div class="footer__category--title">Legal</div>
-        <a class="footer__category--top">GDPR</a>
-        <a class="footer__category">Privacy Policy</a>
-        <a class="footer__category">Terms of Service</a>
-        <a class="footer__category">Disclaimer</a>
+      <div class="row footer__row--links">
+      
+        <div class="footer__categories">
+          <div class="footer__category--title">Main</div>
+          <a class="footer__category--top">Blog</a>
+          <a class="footer__category">FAQs</a>
+          <a class="footer__category">Support</a>
+          <a class="footer__category">About Us</a>
         </div>
 
+        <div class="footer__categories">
+          <div class="footer__category--title">Product</div>
+          <a class="footer__category--top no-cursor">Log In</a>
+          <a href="#pricing" class="footer__category">Personal</a>
+          <a href="#pricing" class="footer__category">Business</a>
+          <a class="footer__category">Team</a>
+        </div>
+
+        <div class="footer__categories">
+          <div class="footer__category--title">Press</div>
+          <a class="footer__category--top">Logos</a>
+          <a class="footer__category">Events</a>
+          <a class="footer__category">Stories</a>
+          <a class="footer__category">Office</a>
+        </div>
+
+        <div class="footer__categories">
+          <div class="footer__category--title">Team</div>
+          <a class="footer__category--top">Career</a>
+          <a class="footer__category">Founders</a>
+          <a class="footer__category">Culture</a>
+          <a class="footer__category">Onboarding</a>
+        </div>
+
+        <div class="footer__categories">
+          <div class="footer__category--title">Legal</div>
+          <a class="footer__category--top">GDPR</a>
+          <a class="footer__category">Privacy Policy</a>
+          <a class="footer__category">Terms of Service</a>
+          <a class="footer__category">Disclaimer</a>
+          </div>
+
       </div>
-
-    </div>
-    </main>
-
-    <div class="footer__divider"></div>
-
-    <div class="row footer__row--logo">
-      <div class="nav__logo footer__logo">
-        <img class="nav__logo--img footer__logo--img" src="/assets/Treact-footerlogo.svg" alt="Treact Logo" />
-        <div class="nav__logo--title footer__logo--title">Treact Inc.</div>
-      </div>
-      
-      <p class="footer__copyright">&copy; 2018 Treact Inc. All Rights Reserved.</p>
-      
-      <div class="nav__logo footer__socials">
-        <div class="footer__social">
-          <i class="fa-brands fa-facebook-f" style="color: #243e63;"></i>
+    
+      <div class="footer__divider"></div>
+    
+      <div class="row footer__row--logo">
+        <div class="nav__logo footer__logo">
+          <img class="nav__logo--img footer__logo--img" src="/assets/Treact-footerlogo.svg" alt="Treact Logo" />
+          <div class="nav__logo--title footer__logo--title">Treact Inc.</div>
         </div>
         
-        <div class="footer__social">
-          <i class="fa-brands fa-twitter" style="color: #243e63;"></i>
-        </div>
+        <p class="footer__copyright">&copy; 2018 Treact Inc. All Rights Reserved.</p>
+        
+        <div class="nav__logo footer__socials">
+          <div class="footer__social">
+            <i class="fa-brands fa-facebook-f" style="color: #243e63;"></i>
+          </div>
+          
+          <div class="footer__social">
+            <i class="fa-brands fa-twitter" style="color: #243e63;"></i>
+          </div>
 
-        <div class="footer__social">
-          <i class="fa-brands fa-youtube" style="color: #243e63;"></i>
-        </div>
+          <div class="footer__social">
+            <i class="fa-brands fa-youtube" style="color: #243e63;"></i>
+          </div>
 
+        </div>
       </div>
     </div>
-
-  </div>
-
-  
-</footer>
+  </footer>
 
 </body>
 
