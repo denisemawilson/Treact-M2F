@@ -1154,34 +1154,11 @@ main {
 
 /* Animations */
 
-
-/*
-@keyframes slideInFromLeft {
-    from { transform: translateX(-100%); }
-    to { transform: translateX(0); }
-}
-
-.steps__container, .testimony__container {
-    animation: slideInFromLeft 1.0s ease-out forwards;
-}
-
-@keyframes slideInFromRight {
-    from { transform: translateX(100px); }
-    to { transform: translateX(0); }
-}
-
-
-.quality__container, .values__container {
-    animation: slideInFromRight 1.0s ease-out forwards;
-}
-*/
-
 .steps__container, .testimony__container {
   transform: translateX(100px);
     opacity: 0;
     transition: all 1.8s ease-out;
 }
-
 
 .values__container, .quality__container {
     transform: translateX(-100px);
