@@ -37,6 +37,8 @@ h1 {
     line-height: 1.25;
 }
 
+
+
 .nav__link {
     cursor: pointer; 
 }
@@ -129,8 +131,6 @@ ul {
     flex-direction: column;
     justify-content: space-between;
 }
-
-
 
 /* Navigation Styles */
 
@@ -389,18 +389,16 @@ ul {
 
 /* Features Section Styles */
 
-.features__container, .pricing__row {
+.features__container, .pricing__row, .features__row {
     display: flex;
     flex-direction: column;
 }
 
 .features__row, .pricing__row {
     align-items: center;
-    display: flex;
-    flex-direction: column;
 }
 
-.features__title, .pricing__title, .features__description, .pricing__description, .features__para, .pricing__para {
+.features__title, .pricing__title, .features__description, .pricing__description, .features__para, .pricing__para, .quality__para, .features__para, .values__para {
     text-align: center;
 }
 
@@ -473,7 +471,7 @@ ul {
 
  /*Quality Section Styles */
 
-.quality__row, .steps__row, .value__row, .pricing__row, .testimony__row {
+.quality__row, .steps__row, .values__row, .pricing__row, .testimony__row {
     display: flex;
     align-items: center;
     flex-direction: row;
@@ -1154,6 +1152,70 @@ main {
     transition: color 300ms ease;
 }
 
+/* Animations */
+
+
+/*
+@keyframes slideInFromLeft {
+    from { transform: translateX(-100%); }
+    to { transform: translateX(0); }
+}
+
+.steps__container, .testimony__container {
+    animation: slideInFromLeft 1.0s ease-out forwards;
+}
+
+@keyframes slideInFromRight {
+    from { transform: translateX(100px); }
+    to { transform: translateX(0); }
+}
+
+
+.quality__container, .values__container {
+    animation: slideInFromRight 1.0s ease-out forwards;
+}
+*/
+
+.steps__container, .testimony__container {
+  transform: translateX(100px);
+    opacity: 0;
+    transition: all 1.8s ease-out;
+}
+
+
+.values__container, .quality__container {
+    transform: translateX(-100px);
+    opacity: 0;
+    transition: all 1.8s ease-out;
+}
+
+.values__container.active, .quality__container.active, .steps__container.active, .testimony__container.active {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+@keyframes popIn {
+    0% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.features__container, .pricing__container {
+    /*
+    animation: popIn 0.8s ease-out forwards;
+    */
+    
+    animation: popIn linear both;
+    animation-timeline: view();
+    animation-range: entry 10% cover 30%;
+}
+
+
 
 /* Interactions */
 
@@ -1166,10 +1228,14 @@ a:hover {
 }
 
 
-.features__img--wrapper:hover, .values__img--wrapper:hover {
-    transform: scale(1.2);
+.features__img--wrapper:hover, .values__img--wrapper:hover, .plan__btn:hover{
+    transform: translate(1px, -1px);
     transition: transform 300ms ease;
+    box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+    rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+    rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
 }
+
 
 
 
@@ -1352,15 +1418,17 @@ a:hover {
 
     .features__service-img--row {
         width: 60%;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
         padding: 0;
     } 
     
     .features__service--title {
-        text-align: center;
+        text-align: left;
         padding: 0;
+    }
+
+    .steps__service--title {
+        text-align: center;
+        padding-bottom: 12px;
     }
 
     .footer__row, .testimony__row  {
@@ -1368,7 +1436,7 @@ a:hover {
         margin: 0;
     }
 
-    .quality__row, .value__row, .steps__row, .testimony__row {
+    .quality__row, .values__row, .steps__row, .testimony__row {
         flex-direction: column-reverse;
         width: 100%;
     }
@@ -1416,7 +1484,7 @@ a:hover {
     .testimony__profile--img {
         padding: 0;
         align-items: center;
-        text-align: center;
+        text-align: center;      
     }
 
     .plans__blob {
@@ -1424,10 +1492,16 @@ a:hover {
     }
 
 
-    .values__service, .values__service-img--row, .features__service--para {
+    .values__service, .values__services, .values__service-img--row, .testimony__para, .footer__row  {
         align-items: center;
         text-align: center;
         width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+     .values__services, .closing__content--container {
+        flex-direction: column;
     }
     
     .steps__service--row, .steps__service--para {
@@ -1435,7 +1509,7 @@ a:hover {
         margin: 0;
     }
 
-    .steps__img--wrapper, .section__img--wrapper, .quality__img--wrapper {
+    .steps__img--wrapper, .quality__img--wrapper {
         width: 95%;
         max-width: 720px;
     }
@@ -1457,22 +1531,32 @@ a:hover {
         transform: translateX(50%) translateY(50%) scaleX(1) scaleY(1);
     }
 
-}
-
-/*
-
-
-
-
-
-
-
-    #body, #features, #quality, #steps, #values, #pricing, #testimony, #closing {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+    .pricing__service--row, .features__service-img--row {
+        padding: 18px 0;
     }
 
-*/
+    .plan__button {
+        align-items: center;
+        text-align: center;
+        padding: 0 0 36px 0;
+    }
 
+    .footer__categories {
+        width: calc(100% / 3);
+        padding: 24px;
+        margin-top: 24px;
+        text-align: left;
+    }
+    
+    .footer__row--logo {
+        width: calc(100% / 3);
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .values__service-img--row {
+        padding-top: 12px;
+    }
+
+}
